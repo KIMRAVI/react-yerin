@@ -30,3 +30,13 @@ If you are developing a production application, we recommend enabling type-aware
 ```
 
 See the [Oxlint rules documentation](https://oxc.rs/docs/guide/usage/linter/rules) for the full list of rules and categories.
+
+
+<!-- npm run dev -->
+
+<!-- 
+  앞으로 코드를 수정할 때마다 아래 세 명령어만 반복하면 됩니다:
+  git add .
+  git commit -m "수정 내용 설명"
+  git push
+-->
