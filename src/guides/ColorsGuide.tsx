@@ -1,6 +1,8 @@
 import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
 import Stack from "@mui/material/Stack";
+import styles from "./ButtonGuide.module.scss";
+import GuideLayout from "./GuideLayout";
 
 const colors = [
   { name: "Primary", value: "#1976d2" },
@@ -12,21 +14,23 @@ const colors = [
 
 export default function ColorsGuide() {
   return (
-    <Stack direction="row" spacing={2} flexWrap="wrap">
-      {colors.map((color) => (
-        <Box key={color.name} sx={{ textAlign: "center" }}>
-          <Box
-            sx={{
-              width: 80,
-              height: 80,
-              backgroundColor: color.value,
-              borderRadius: 1,
-              mb: 1,
-            }}
-          />
-          <Typography variant="caption">{color.name}</Typography>
-        </Box>
-      ))}
-    </Stack>
+    <GuideLayout title="colors" className={styles.container}>
+      <Stack direction="row" spacing={2} sx={{ flexWrap: "wrap" }}>
+        {colors.map((color) => (
+          <Box key={color.name} sx={{ textAlign: "center" }}>
+            <Box
+              sx={{
+                width: 80,
+                height: 80,
+                backgroundColor: color.value,
+                borderRadius: 1,
+                mb: 1,
+              }}
+            />
+            <Typography variant="caption">{color.name}</Typography>
+          </Box>
+        ))}
+      </Stack>
+    </GuideLayout>
   );
 }
