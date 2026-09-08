@@ -4,7 +4,6 @@ import AccordionActions from "@mui/material/AccordionActions";
 import Typography from "@mui/material/Typography";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import Button from "@mui/material/Button";
-import styles from "./ModalGuide.module.scss";
 import layoutStyles from "./GuideLayout.module.scss";
 import GuideLayout from "./GuideLayout";
 
@@ -61,12 +60,12 @@ export default function AccordionUsage() {
   const [expanded, setExpanded] = React.useState<string | false>("panel1");
 
   const handleChange =
-    (panel: string) => (event: React.SyntheticEvent, newExpanded: boolean) => {
+    (panel: string) => (_event: React.SyntheticEvent, newExpanded: boolean) => {
       setExpanded(newExpanded ? panel : false);
     };
 
   return (
-    <GuideLayout title="Modal" className={styles.container}>
+    <GuideLayout title="Accordion" className={layoutStyles.container}>
       <Typography className={layoutStyles.sectionTitle}>Basic</Typography>
       <div>
         <Accordion>

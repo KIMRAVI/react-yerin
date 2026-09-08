@@ -8,6 +8,7 @@ import TextFieldGuide from "./guides/TextFieldGuide";
 import AccordionGuide from "./guides/AccordionGuide";
 import CheckboxGuide from "./guides/CheckboxGuide";
 import RadioGroupGuide from "./guides/RadioGroupGuide";
+import ListGuide from "./guides/ListGuide";
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
       <Route path="/guides/accordion" element={<AccordionGuide />} />{" "}
       <Route path="/guides/checkbox" element={<CheckboxGuide />} />{" "}
       <Route path="/guides/radiogroup" element={<RadioGroupGuide />} />{" "}
+      <Route path="/guides/list" element={<ListGuide />} />{" "}
     </Routes>
   );
 }

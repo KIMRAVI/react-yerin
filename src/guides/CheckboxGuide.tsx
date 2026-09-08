@@ -1,6 +1,5 @@
 import Checkbox from "@mui/material/Checkbox";
 import GuideLayout from "./GuideLayout";
-import styles from "./ModalGuide.module.scss";
 import FormGroup from "@mui/material/FormGroup";
 import FormControlLabel from "@mui/material/FormControlLabel";
 import Typography from "@mui/material/Typography";
@@ -36,7 +35,7 @@ export default function Checkboxes() {
   const error = [gilad, jason, antoine].filter((v) => v).length !== 2;
 
   return (
-    <GuideLayout title="Modal" className={styles.container}>
+    <GuideLayout title="Modal" className={layoutStyles.container}>
       <Typography className={layoutStyles.sectionTitle}>Basic</Typography>
       <div>
         <Checkbox {...label} defaultChecked />

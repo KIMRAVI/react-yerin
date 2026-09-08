@@ -5,23 +5,13 @@
   box-shadow: none !important;
   box-sizing: border-box;
 
-  table {
-    border: 1px solid black;
-    border-collapse: collapse;
-    padding: 20px;
-    thead {
-      tr {
-        th {
-          text-align: center;
-        }
-      }
-    }
-    tbody {
-      tr {
-        td {
-          text-align: center;
-        }
-      }
-    }
+  :global(.MuiDataGrid-root) {
+    --DataGrid-rowBorderColor: #ddd !important;
+    --DataGrid-t-header-background-base: #f5f5f5 !important;
+  }
+
+  :global(.MuiDataGrid-footerContainer) {
+    background-color: #f5f5f5 !important;
+    border-top-color: #ddd !important;
   }
 }

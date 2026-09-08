@@ -35,6 +35,6 @@ See the [Oxlint rules documentation](https://oxc.rs/docs/guide/usage/linter/rule
 
 <!--
   git add .
-  git commit -m "수정 내용 설명"
+  git commit -m "내용"
   git push
 -->

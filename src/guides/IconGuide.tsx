@@ -7,8 +7,7 @@ import { pink } from "@mui/material/colors";
 import SvgIcon, { type SvgIconProps } from "@mui/material/SvgIcon";
 import { green } from "@mui/material/colors";
 import Icon from "@mui/material/Icon";
-
-// import * as React from "react";
+import layoutStyles from "./GuideLayout.module.scss";
 
 function HomeIcon(props: SvgIconProps) {
   return (
@@ -20,7 +19,7 @@ function HomeIcon(props: SvgIconProps) {
 
 export default function IconGuide() {
   return (
-    <GuideLayout title="Icon" className={styles.container}>
+    <GuideLayout title="Icon" className={layoutStyles.container}>
       <div className={styles.inner_wrap}>
         <Stack spacing={2} direction="row">
           <HomeIcon />
