@@ -14,6 +14,8 @@ const rows = [
   { id: 7, screenName: "ModalGuide", path: "/guides/modal" },
   { id: 8, screenName: "IconsGuide", path: "/guides/icon" },
   { id: 9, screenName: "TypographyGuide", path: "/guides/typography" },
+  { id: 10, screenName: "Landing", path: "/landing" },
+  { id: 11, screenName: "SelectGuide", path: "/guides/select" },
 ];
 
 const columns: GridColDef<(typeof rows)[number]>[] = [

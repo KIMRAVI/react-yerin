@@ -45,7 +45,7 @@ export default function NestedList() {
   const [selectedIndex, setSelectedIndex] = React.useState(1);
 
   const handleListItemClick = (
-    event: React.MouseEvent<HTMLDivElement, MouseEvent>,
+    _event: React.MouseEvent<HTMLDivElement, MouseEvent>,
     index: number,
   ) => {
     setSelectedIndex(index);
